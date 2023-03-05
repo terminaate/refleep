@@ -8,7 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write ./src/**/*",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "new:util": "hygen new util",
+    "new:hook": "hygen new hook",
+    "new:component": "hygen new component",
+    "new:page": "hygen new page"
   },
   "dependencies": {
     "@types/node": "18.14.6",
