@@ -1,0 +1,7 @@
+@function pxToVh($value, $base: 1080) {
+  @return calc($value / $base) * 100vh;
+}
+
+@function pxToVw($value, $base: 1920) {
+  @return calc($value / $base) * 100vw;
+}
