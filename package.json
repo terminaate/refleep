@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write ./src/**/*",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "husky": "^8.0.3",
-    "hygen": "^6.2.11"
+    "hygen": "^6.2.11",
+    "prettier": "^2.8.4"
   }
 }
