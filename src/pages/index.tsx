@@ -1,5 +1,7 @@
+import BasicPage from '@/components/BasicPage';
+
 const Index = () => {
-  return <div>Home page</div>;
+  return <BasicPage>Home page</BasicPage>;
 };
 
 export default Index;
