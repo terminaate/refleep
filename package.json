@@ -12,6 +12,7 @@
     "new:util": "hygen new util",
     "new:hook": "hygen new hook",
     "new:component": "hygen new component",
+    "new:page-component": "hygen new page-component",
     "new:page": "hygen new page"
   },
   "dependencies": {
