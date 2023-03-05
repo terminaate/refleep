@@ -25,7 +25,13 @@ const Video: FC<IVideo> = ({
       <div className={cl.titleContainer}>
         <h2 className={cl.title}>{title}</h2>
       </div>
-      <video ref={videoRef} loop={true} controls={false} className={cl.video} {...props} />
+      <video
+        ref={videoRef}
+        loop={true}
+        controls={false}
+        className={cl.video}
+        {...props}
+      />
       {fullscreen && (
         <button
           onClick={onFullscreenButtonClick}

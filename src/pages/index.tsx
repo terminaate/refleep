@@ -6,8 +6,7 @@ import HomeSection from '@/components/pages/HomePage/HomeSection';
 const Index = () => {
   return (
     <BasicPage>
-      <HomeSection/>
-      <div className={cl.line} />
+      <HomeSection />
     </BasicPage>
   );
 };

@@ -6,8 +6,12 @@ import awwwardsLogo from '$/awwwards.svg';
 import reddotLogo from '$/reddot.svg';
 import theWebbyAwardsLogo from '$/the-webby-awards.svg';
 import fwaLogo from '$/fwa.svg';
+import scrollImg from "$/scroll.svg";
+import { useParallax } from 'react-scroll-parallax';
 
 const HomeSection = () => {
+  const {ref: requestDesignButtonRef} = useParallax({speed: -10});
+
   return (
     <section className={cl.homeSection}>
       <div className={cl.container}>
@@ -32,6 +36,9 @@ const HomeSection = () => {
           </div>
         </div>
       </div>
+      <Image src={scrollImg} alt={"scroll"} className={cl.scrollIcon}/>
+      <Button ref={requestDesignButtonRef} className={cl.requestDesignButton}>Request a design...</Button>
+      <div className={cl.strokeLine}/>
     </section>
   );
 };
