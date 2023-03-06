@@ -1,7 +1,8 @@
-import { FC, useRef, VideoHTMLAttributes } from 'react';
+import { FC, useEffect, VideoHTMLAttributes } from 'react';
 import cl from './Video.module.scss';
 import Image from 'next/image';
 import fullscreenIcon from '$/fullscreen.svg';
+import useIntersectionObserver from '@/hooks/useIntersectionObserver';
 
 interface IVideo extends VideoHTMLAttributes<HTMLVideoElement> {
   title: string;
@@ -14,11 +15,34 @@ const Video: FC<IVideo> = ({
   className,
   ...props
 }) => {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const videoRef = useIntersectionObserver<HTMLVideoElement>(
+    (isVisible) => {
+      if (isVisible) {
+        void videoRef.current!.play();
+      } else {
+        videoRef.current!.pause();
+      }
+    },
+  );
 
-  const onFullscreenButtonClick = () => {
-    videoRef.current?.requestFullscreen();
+  const onFullscreenButtonClick = async () => {
+    await videoRef.current!.requestFullscreen();
   };
+
+  useEffect(() => {
+    const onFullscreenChange = () => {
+      videoRef.current!.muted = !document.fullscreenElement;
+    };
+
+    videoRef.current!.addEventListener('fullscreenchange', onFullscreenChange);
+
+    return () => {
+      videoRef.current!.removeEventListener(
+        'fullscreenchange',
+        onFullscreenChange,
+      );
+    };
+  }, []);
 
   return (
     <div className={cl.videoContainer}>
@@ -27,6 +51,7 @@ const Video: FC<IVideo> = ({
       </div>
       <video
         ref={videoRef}
+        muted={true}
         loop={true}
         controls={false}
         className={cl.video}

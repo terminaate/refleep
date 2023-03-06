@@ -14,7 +14,7 @@
   --text-primary: #fff;
   --text-secondary: rgba(255, 255, 255, 0.8);
   --text-description: #aeaeb2;
-  --text-third: #6e6e73;
+  --text-inactive: #6e6e73;
   --button-primary: #007aff;
   --video-header: #fff;
   --video-title: #3d3d3d;
@@ -25,6 +25,7 @@ body {
   background-color: var(--background-primary);
   color: var(--text-primary);
   font-family: var(--font-primary);
+  overflow-x: hidden;
 }
 
 a {

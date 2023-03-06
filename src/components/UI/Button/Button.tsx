@@ -7,7 +7,7 @@ interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = forwardRef<unknown, IButton>(
-  ({ children, className, background=true, ...props }, ref) => {
+  ({ children, className, background = true, ...props }, ref) => {
     return (
       <button
         data-background={background}

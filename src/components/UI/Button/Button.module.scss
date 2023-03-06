@@ -11,7 +11,7 @@
   padding: 22px 45px;
   cursor: pointer;
 
-  &[data-background="false"] {
+  &[data-background='false'] {
     background: transparent;
     border: 1px solid var(--text-secondary);
   }

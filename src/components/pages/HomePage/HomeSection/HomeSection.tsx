@@ -41,7 +41,7 @@ const HomeSection = () => {
       <Button ref={requestDesignButtonRef} className={cl.requestDesignButton}>
         Request a design...
       </Button>
-      <Separator/>
+      <Separator />
     </section>
   );
 };
