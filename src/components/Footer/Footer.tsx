@@ -12,15 +12,23 @@ const Footer = () => {
           </a>
           <div className={cl.socials}>
             {socials.map((social, key) => (
-              <a className={cl.socialLink} key={key} href={social.href} target={'_blank'} rel={'noreferrer'}>
+              <a
+                className={cl.socialLink}
+                key={key}
+                href={social.href}
+                target={'_blank'}
+                rel={'noreferrer'}
+              >
                 <Image src={social.src} alt={social.alt} />
               </a>
             ))}
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className={cl.copyrightContainer}>
-          <span className={cl.copyrightText}>© 2023 refleep — Design Studio, Dubai, UAE</span>
+          <span className={cl.copyrightText}>
+            © 2023 refleep — Design Studio, Dubai, UAE
+          </span>
           <span className={cl.termsAndPrivacy}>Terms and Privacy</span>
         </div>
       </div>

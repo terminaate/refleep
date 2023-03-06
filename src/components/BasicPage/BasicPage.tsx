@@ -13,14 +13,14 @@ const BasicPage: FC<IBasicPage> = ({
   className,
   children,
   header = true,
-  footer=true,
+  footer = true,
   ...props
 }) => {
   return (
     <div className={classNames(cl.basicPage, className)} {...props}>
       {header && <Header />}
       {children}
-      {footer && <Footer/>}
+      {footer && <Footer />}
     </div>
   );
 };
