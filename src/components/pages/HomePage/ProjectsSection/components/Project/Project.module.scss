@@ -1,4 +1,4 @@
-@import "#/mixins.scss";
+@import '#/mixins.scss';
 
 .projectContainer {
   height: 400px;
@@ -21,7 +21,7 @@
     z-index: -1;
     width: 100%;
     opacity: 0;
-    transition: opacity .3s;
+    transition: opacity 0.3s;
   }
 
   &:hover .projectImage {
@@ -51,7 +51,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       color: var(--text-third);
-      transition: color .3s;
+      transition: color 0.3s;
     }
 
     .projectTitle {
@@ -60,7 +60,7 @@
       line-height: 166%;
       color: var(--text-primary);
       text-transform: uppercase;
-      transition: .3s;
+      transition: 0.3s;
     }
   }
 

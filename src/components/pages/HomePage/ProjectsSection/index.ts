@@ -1,4 +1,4 @@
-import ProjectsSection from "./ProjectsSection";
+import ProjectsSection from './ProjectsSection';
 
 export * from './ProjectsSection';
 export default ProjectsSection;

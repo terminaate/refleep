@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <BasicPage>
       <HomeSection />
-      <ProjectsSection/>
+      <ProjectsSection />
     </BasicPage>
   );
 };

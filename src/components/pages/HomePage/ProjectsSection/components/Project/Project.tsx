@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import cl from "./Project.module.scss";
+import cl from './Project.module.scss';
 
 export interface IProject {
   type: string;
@@ -8,7 +8,7 @@ export interface IProject {
   image: string;
 }
 
-const Project: FC<IProject> = ({image, type, title, description}) => {
+const Project: FC<IProject> = ({ image, type, title, description }) => {
   return (
     <div className={cl.projectContainer}>
       <div className={cl.projectTitleContainer}>
