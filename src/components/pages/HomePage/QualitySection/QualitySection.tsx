@@ -10,12 +10,12 @@ const QualitySection = () => {
       <h2 className={cl.title}>Why us?</h2>
       <div className={cl.qualitiesContainer}>
         {/*<div className={cl.topQualitiesContainer}>*/}
-          <ValueQuality />
-          <RespectQuality />
+        <ValueQuality />
+        <RespectQuality />
         {/*</div>*/}
         {/*<div className={cl.bottomQualitiesContainer}>*/}
-          <StoryQuality />
-          <ExperienceQuality />
+        <StoryQuality />
+        <ExperienceQuality />
         {/*</div>*/}
       </div>
     </section>
