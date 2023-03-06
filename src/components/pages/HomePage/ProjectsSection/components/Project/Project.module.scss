@@ -1,0 +1,75 @@
+@import "#/mixins.scss";
+
+.projectContainer {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 351px;
+  padding-right: 470px;
+  //border-bottom: 1px solid white;
+  background-color: var(--background-secondary);
+  position: relative;
+  overflow: hidden;
+
+  .projectImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover .projectImage {
+    opacity: 1;
+  }
+
+  &:hover .projectTitleContainer {
+    .projectTitle {
+      @include stroke;
+      color: var(--background-secondary);
+    }
+
+    .projectType {
+      color: var(--text-primary);
+    }
+  }
+
+  .projectTitleContainer {
+    display: flex;
+    flex-direction: column;
+
+    .projectType {
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 105%;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-third);
+      transition: color .3s;
+    }
+
+    .projectTitle {
+      font-weight: 400;
+      font-size: 82px;
+      line-height: 166%;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      transition: .3s;
+    }
+  }
+
+  .projectDescription {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: var(--text-secondary);
+    text-align: left;
+  }
+}

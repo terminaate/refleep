@@ -7,7 +7,11 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 const Button = forwardRef<unknown, ButtonProps>(
   ({ children, className, ...props }, ref) => {
     return (
-      <button ref={ref as RefObject<HTMLButtonElement>} className={classNames(cl.button, className)} {...props}>
+      <button
+        ref={ref as RefObject<HTMLButtonElement>}
+        className={classNames(cl.button, className)}
+        {...props}
+      >
         {children}
       </button>
     );
