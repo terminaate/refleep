@@ -1,6 +1,8 @@
 import cl from './QualitySection.module.scss';
 import ValueQuality from './components/ValueQuality';
 import RespectQuality from './components/RespectQuality';
+import StoryQuality from './components/StoryQuality';
+import ExperienceQuality from './components/ExperienceQuality';
 
 const QualitySection = () => {
   return (
@@ -11,7 +13,10 @@ const QualitySection = () => {
           <ValueQuality />
           <RespectQuality />
         </div>
-        <div className={cl.bottomQualitiesContainer}></div>
+        <div className={cl.bottomQualitiesContainer}>
+          <StoryQuality />
+          <ExperienceQuality />
+        </div>
       </div>
     </section>
   );

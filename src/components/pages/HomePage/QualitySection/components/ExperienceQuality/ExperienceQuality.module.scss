@@ -1,0 +1,27 @@
+.experienceQuality {
+  width: 560px;
+  height: 373px;
+
+  .container {
+    row-gap: 13px;
+    position: absolute;
+    top: 86px;
+    left: 92px;
+
+    .title {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 100%;
+      letter-spacing: -0.504px;
+    }
+
+    .description {
+      max-width: 282px;
+
+      span {
+        color: var(--text-primary);
+        margin-right: 4px;
+      }
+    }
+  }
+}

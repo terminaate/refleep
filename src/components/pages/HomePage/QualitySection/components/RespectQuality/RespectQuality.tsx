@@ -1,5 +1,5 @@
 import cl from './RespectQuality.module.scss';
-import Quality from '@/components/pages/HomePage/QualitySection/components/Quality';
+import Quality from '../Quality';
 
 const RespectQuality = () => {
   return (

@@ -1,0 +1,35 @@
+.storyQuality {
+  width: 819px;
+  height: 373px;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-image: linear-gradient(
+                    180deg,
+                    #007aff 0%,
+                    rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .container {
+    row-gap: 34px;
+    position: absolute;
+    top: 82px;
+    right: 261px;
+
+    .title {
+      font-size: 56px;
+      line-height: 106%;
+      letter-spacing: -0.504px;
+    }
+
+    .description {
+      max-width: 268px;
+    }
+  }
+}

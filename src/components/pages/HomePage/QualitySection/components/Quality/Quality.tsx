@@ -1,11 +1,11 @@
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 import cl from './Quality.module.scss';
 import classNames from 'classnames';
 import useIntersectionObserver from '@/hooks/useIntersectionObserver';
 
 interface IQuality {
   title: string;
-  description: string;
+  description: ReactNode | string;
   className?: string;
   containerClassName?: string;
   titleClassName?: string;
