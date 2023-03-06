@@ -1,0 +1,20 @@
+.respectQuality {
+  width: 819px;
+  height: 373px;
+
+  .container {
+    row-gap: 35px;
+    position: absolute;
+    left: 246px;
+
+    .title {
+      font-size: 56px;
+      line-height: 106%;
+      letter-spacing: -0.504px;
+    }
+
+    .description {
+      max-width: 282px;
+    }
+  }
+}
