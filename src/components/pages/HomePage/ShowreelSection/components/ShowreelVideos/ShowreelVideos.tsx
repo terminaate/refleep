@@ -2,10 +2,7 @@ import { FC, useState } from 'react';
 import cl from './ShowreelVideos.module.scss';
 import Image from 'next/image';
 import logoImg from '$/logo.svg';
-import {
-  IVideo,
-  videos,
-} from './ShowreelVideos.const';
+import { IVideo, videos } from './ShowreelVideos.const';
 import Button from '@/components/UI/Button';
 import Video from '@/components/Video';
 const ShowreelVideos = () => {
