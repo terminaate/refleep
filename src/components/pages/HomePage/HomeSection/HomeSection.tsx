@@ -8,6 +8,7 @@ import theWebbyAwardsLogo from '$/the-webby-awards.svg';
 import fwaLogo from '$/fwa.svg';
 import scrollImg from '$/scroll.svg';
 import { useParallax } from 'react-scroll-parallax';
+import Separator from '@/components/Separator';
 
 const HomeSection = () => {
   const { ref: requestDesignButtonRef } = useParallax({ speed: 4 });
@@ -40,7 +41,7 @@ const HomeSection = () => {
       <Button ref={requestDesignButtonRef} className={cl.requestDesignButton}>
         Request a design...
       </Button>
-      <div className={cl.strokeLine} />
+      <Separator/>
     </section>
   );
 };

@@ -1,5 +1,17 @@
 .projectsSection {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 131px;
+
+  .casesButton {
+    margin-top: 78px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 56%;
+  }
 }

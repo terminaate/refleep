@@ -9,4 +9,10 @@
   font-weight: 500;
   color: var(--text-primary);
   padding: 22px 45px;
+  cursor: pointer;
+
+  &[data-background="false"] {
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+  }
 }
