@@ -1,3 +1,5 @@
+@import "#/functions.scss";
+
 .homeSection {
   display: flex;
   align-items: center;
@@ -61,15 +63,15 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 95px;
+    bottom: pxToVh(95);
   }
 
   .requestDesignButton {
     font-size: 22px;
     line-height: 16px;
     position: absolute;
-    bottom: 0;
-    right: 86px;
+    bottom: pxToVh(81);
+    right: pxToVw(86);
   }
 
   .strokeLine {

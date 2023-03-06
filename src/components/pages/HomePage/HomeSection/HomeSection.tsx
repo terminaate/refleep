@@ -10,7 +10,7 @@ import scrollImg from "$/scroll.svg";
 import { useParallax } from 'react-scroll-parallax';
 
 const HomeSection = () => {
-  const {ref: requestDesignButtonRef} = useParallax({speed: -10});
+  const {ref: requestDesignButtonRef} = useParallax({speed: 4});
 
   return (
     <section className={cl.homeSection}>
