@@ -8,7 +8,10 @@ const ProjectsSection = () => {
   return (
     <section className={cl.projectsSection}>
       {projects.map((projectData, key) => (
-        <Project {...projectData} key={key} />
+        <>
+          <Project {...projectData} key={key} />
+          {key !== projects.length-1 && <Separator absolute={false}/>}
+        </>
       ))}
       <Button className={cl.casesButton} background={false}>
         See case studies

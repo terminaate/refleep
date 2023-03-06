@@ -17,9 +17,9 @@ const Video: FC<IVideo> = ({
 }) => {
   const videoRef = useIntersectionObserver<HTMLVideoElement>((isVisible) => {
     if (isVisible) {
-      void videoRef.current!.play();
+      videoRef.current?.play().catch(console.log);
     } else {
-      videoRef.current!.pause();
+      videoRef.current?.pause();
     }
   });
 
