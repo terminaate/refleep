@@ -3,6 +3,7 @@ import cl from './Video.module.scss';
 import Image from 'next/image';
 import fullscreenIcon from '$/fullscreen.svg';
 import useIntersectionObserver from '@/hooks/useIntersectionObserver';
+import classNames from 'classnames';
 
 interface IVideo extends VideoHTMLAttributes<HTMLVideoElement> {
   title: string;
@@ -53,7 +54,7 @@ const Video: FC<IVideo> = ({
         loop={true}
         playsInline={true}
         controls={false}
-        className={cl.video}
+        className={classNames(cl.video, className)}
         {...props}
       />
       {fullscreen && (
