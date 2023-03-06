@@ -12,6 +12,7 @@
   background-color: var(--background-secondary);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 
   .projectImage {
     position: absolute;
@@ -30,8 +31,13 @@
 
   &:hover .projectTitleContainer {
     .projectTitle {
-      @include stroke;
+      @include stroke();
       color: var(--background-secondary);
+      @supports (-webkit-text-stroke: 1px var(--text-primary)) {
+        color: transparent;
+        -webkit-text-stroke: 1px var(--text-primary);
+        text-shadow: none;
+      }
     }
 
     .projectType {
