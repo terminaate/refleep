@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       {projects.map((projectData, key) => (
         <>
           <Project {...projectData} key={key} />
-          {key !== projects.length-1 && <Separator absolute={false}/>}
+          {key !== projects.length - 1 && <Separator absolute={false} />}
         </>
       ))}
       <Button className={cl.casesButton} background={false}>

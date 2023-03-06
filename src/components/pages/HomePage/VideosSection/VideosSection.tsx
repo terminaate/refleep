@@ -38,7 +38,7 @@ const VideosSection = () => {
             ))}
           </div>
         </div>
-        <Video title={'Showreel'} />
+        <Video title={'Showreel'} src={activeVideo.video} />
       </div>
     </section>
   );

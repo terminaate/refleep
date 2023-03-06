@@ -54,6 +54,7 @@
 
           &[data-background='false'] {
             color: var(--text-inactive);
+            border-color: var(--text-inactive);
           }
         }
       }

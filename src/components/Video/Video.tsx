@@ -51,6 +51,7 @@ const Video: FC<IVideo> = ({
         ref={videoRef}
         muted={true}
         loop={true}
+        playsInline={true}
         controls={false}
         className={cl.video}
         {...props}
