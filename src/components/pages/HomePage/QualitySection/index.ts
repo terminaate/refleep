@@ -1,4 +1,4 @@
-import QualitySection from "./QualitySection";
+import QualitySection from './QualitySection';
 
 export * from './QualitySection';
 export default QualitySection;

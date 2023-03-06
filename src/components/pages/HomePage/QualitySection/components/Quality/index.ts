@@ -1,2 +1,2 @@
-export {default} from "./Quality";
-export * from "./Quality";
+export { default } from './Quality';
+export * from './Quality';

@@ -24,7 +24,7 @@
       opacity: 0;
       transform: translateY(-10px);
 
-      &[data-visible="true"] {
+      &[data-visible='true'] {
         opacity: 1;
         transform: none;
       }
@@ -42,7 +42,7 @@
       opacity: 0;
       transform: translateY(-20px);
 
-      &[data-visible="true"] {
+      &[data-visible='true'] {
         opacity: 1;
         transform: none;
       }

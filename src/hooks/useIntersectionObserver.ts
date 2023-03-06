@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 export default <T = HTMLElement>(
   cb: (isVisible: boolean) => void,
-  once =false,
+  once = false,
   options: IntersectionObserverInit = {},
 ) => {
   const elementRef = useRef<T>(null);
@@ -13,7 +13,7 @@ export default <T = HTMLElement>(
         entries.forEach((entry) => {
           cb(entry.isIntersecting);
           if (entry.isIntersecting && once) {
-            observer.unobserve(entry.target)
+            observer.unobserve(entry.target);
           }
         });
       }, options),

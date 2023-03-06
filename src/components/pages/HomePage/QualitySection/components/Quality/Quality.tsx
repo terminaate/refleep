@@ -21,9 +21,15 @@ const Quality: FC<IQuality> = ({
   title,
 }) => {
   const [titleVisible, setTitleVisible] = useState<boolean>(false);
-  const titleRef = useIntersectionObserver<HTMLHeadingElement>(setTitleVisible, true);
+  const titleRef = useIntersectionObserver<HTMLHeadingElement>(
+    setTitleVisible,
+    true,
+  );
   const [descriptionVisible, setDescriptionVisible] = useState<boolean>(false);
-  const descriptionRef = useIntersectionObserver<HTMLSpanElement>(setDescriptionVisible, true);
+  const descriptionRef = useIntersectionObserver<HTMLSpanElement>(
+    setDescriptionVisible,
+    true,
+  );
 
   return (
     <div className={classNames(cl.quality, className)}>

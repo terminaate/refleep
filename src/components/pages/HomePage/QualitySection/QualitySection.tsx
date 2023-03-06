@@ -1,7 +1,6 @@
 import cl from './QualitySection.module.scss';
 import ValueQuality from './components/ValueQuality';
-import RespectQuality
-  from './components/RespectQuality';
+import RespectQuality from './components/RespectQuality';
 
 const QualitySection = () => {
   return (
@@ -10,7 +9,7 @@ const QualitySection = () => {
       <div className={cl.qualitiesContainer}>
         <div className={cl.topQualitiesContainer}>
           <ValueQuality />
-          <RespectQuality/>
+          <RespectQuality />
         </div>
         <div className={cl.bottomQualitiesContainer}></div>
       </div>

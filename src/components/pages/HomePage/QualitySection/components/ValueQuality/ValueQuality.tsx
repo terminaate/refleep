@@ -1,5 +1,5 @@
 import Quality from '../Quality';
-import cl from "./ValueQuality.module.scss";
+import cl from './ValueQuality.module.scss';
 
 const ValueQuality = () => {
   return (
