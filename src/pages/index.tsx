@@ -10,7 +10,7 @@ const Index = () => {
     <BasicPage>
       <HomeSection />
       <ProjectsSection />
-      <VideosSection/>
+      <VideosSection />
     </BasicPage>
   );
 };

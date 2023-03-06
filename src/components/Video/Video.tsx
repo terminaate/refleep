@@ -15,15 +15,13 @@ const Video: FC<IVideo> = ({
   className,
   ...props
 }) => {
-  const videoRef = useIntersectionObserver<HTMLVideoElement>(
-    (isVisible) => {
-      if (isVisible) {
-        void videoRef.current!.play();
-      } else {
-        videoRef.current!.pause();
-      }
-    },
-  );
+  const videoRef = useIntersectionObserver<HTMLVideoElement>((isVisible) => {
+    if (isVisible) {
+      void videoRef.current!.play();
+    } else {
+      videoRef.current!.pause();
+    }
+  });
 
   const onFullscreenButtonClick = async () => {
     await videoRef.current!.requestFullscreen();

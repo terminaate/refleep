@@ -6,7 +6,7 @@ export default <T = HTMLElement>(
 ) => {
   const elementRef = useRef<T>(null);
 
-  if (typeof window !== 'undefined'&& typeof document !== "undefined") {
+  if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     const observerRef = useRef(
       new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

@@ -43,7 +43,7 @@
           font-size: 24px;
           line-height: 28px;
           font-family: var(--font-primary);
-          transition: color .3s, background-color .3s;
+          transition: color 0.3s, background-color 0.3s;
 
           div {
             width: 8px;
@@ -52,7 +52,7 @@
             background-color: var(--text-primary);
           }
 
-          &[data-background="false"] {
+          &[data-background='false'] {
             color: var(--text-inactive);
           }
         }
