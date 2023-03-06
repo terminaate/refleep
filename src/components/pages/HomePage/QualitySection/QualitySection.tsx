@@ -9,14 +9,14 @@ const QualitySection = () => {
     <section className={cl.qualitySection}>
       <h2 className={cl.title}>Why us?</h2>
       <div className={cl.qualitiesContainer}>
-        <div className={cl.topQualitiesContainer}>
+        {/*<div className={cl.topQualitiesContainer}>*/}
           <ValueQuality />
           <RespectQuality />
-        </div>
-        <div className={cl.bottomQualitiesContainer}>
+        {/*</div>*/}
+        {/*<div className={cl.bottomQualitiesContainer}>*/}
           <StoryQuality />
           <ExperienceQuality />
-        </div>
+        {/*</div>*/}
       </div>
     </section>
   );

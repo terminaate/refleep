@@ -11,7 +11,7 @@ const ShowreelImages = () => {
     <div className={cl.imagesContainer}>
       <WindowImage title={'img'} src={activeImage.src} />
       <div className={cl.rightSideContainer}>
-        <h2 className={cl.title}>Brand strategy</h2>
+        <h2 className={cl.title}>{activeImage.name}</h2>
         <div className={cl.buttonsContainer}>
           {images.map((image, key) => (
             <Button

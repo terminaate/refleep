@@ -1,4 +1,4 @@
-import ExperienceQuality from "./ExperienceQuality";
+import ExperienceQuality from './ExperienceQuality';
 
 export * from './ExperienceQuality';
 export default ExperienceQuality;

@@ -2,19 +2,19 @@
   width: 819px;
   height: 373px;
 
-  &:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 1px;
-    height: 100%;
-    background-image: linear-gradient(
-                    180deg,
-                    #007aff 0%,
-                    rgba(0, 0, 0, 0) 100%
-    );
-  }
+  //&:after {
+  //  content: ' ';
+  //  position: absolute;
+  //  top: 0;
+  //  right: 0;
+  //  width: 1px;
+  //  height: 100%;
+  //  background-image: linear-gradient(
+  //    180deg,
+  //    #007aff 0%,
+  //    rgba(0, 0, 0, 0) 100%
+  //  );
+  //}
 
   .container {
     row-gap: 34px;

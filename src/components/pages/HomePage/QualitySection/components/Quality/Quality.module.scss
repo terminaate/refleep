@@ -2,6 +2,8 @@
   width: 560px;
   height: 373px;
   position: relative;
+  z-index: 1;
+  background-color: var(--background-primary);
   //border: 1px solid white;
 
   .container {
