@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   row-gap: 90px;
+  padding-bottom: 240px;
   width: 100%;
 
   .title {
@@ -39,5 +40,12 @@
       );
       z-index: -1;
     }
+  }
+
+  .startProjectButton {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 56%;
   }
 }
