@@ -10,8 +10,8 @@ const Header = () => {
       <Image src={logoImg} alt={'logo'} className={cl.logoImage} />
       <div className={cl.linksContainer}>
         <Link href={''}>Case studies</Link>
-        <Link href={''}>What we do</Link>
-        <Link href={''}>Why us</Link>
+        <a href={'#whatwedo'}>What we do</a>
+        <a href={'#whyus'}>Why us</a>
       </div>
     </header>
   );
