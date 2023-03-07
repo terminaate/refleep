@@ -106,7 +106,7 @@ export const categories: ICategory[] = [
     ],
   },
   {
-    name: 'marketing',
+    name: 'Marketing',
     src: 'https://refleep.netlify.app/marketing.mp4',
     subs: [
       {
