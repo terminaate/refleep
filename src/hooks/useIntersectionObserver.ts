@@ -20,10 +20,14 @@ export default <T = HTMLElement>(
     );
 
     useEffect(() => {
-      observerRef.current?.observe(elementRef.current as HTMLElement);
+      if (elementRef.current !== null) {
+        observerRef.current.observe(elementRef.current as HTMLElement);
+      }
 
       return () => {
-        observerRef.current?.unobserve(elementRef.current as HTMLElement);
+        if (elementRef.current !== null) {
+          observerRef.current.unobserve(elementRef.current as HTMLElement);
+        }
       };
     }, []);
   }

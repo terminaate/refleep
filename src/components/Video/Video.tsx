@@ -34,10 +34,10 @@ const Video: FC<IVideo> = ({
       videoRef.current!.muted = !document.fullscreenElement;
     };
 
-    videoRef.current!.addEventListener('fullscreenchange', onFullscreenChange);
+    videoRef.current?.addEventListener('fullscreenchange', onFullscreenChange);
 
     return () => {
-      videoRef.current!.removeEventListener(
+      videoRef.current?.removeEventListener(
         'fullscreenchange',
         onFullscreenChange,
       );
@@ -46,7 +46,7 @@ const Video: FC<IVideo> = ({
 
   const onCanPlay = () => {
     videoRef.current?.play().catch(console.log);
-  }
+  };
 
   return (
     <div className={cl.videoContainer}>

@@ -1,12 +1,21 @@
 import cl from './ShowreelSection.module.scss';
-import ShowreelVideos from './components/ShowreelVideos';
-import ShowreelImages from './components/ShowreelImages';
+import Showreel from './components/Showreel';
+import ShowreelSub from './components/ShowreelSub';
+import { useState } from 'react';
+import { categories, ICategory } from './components/Showreel/Showreel.const';
 
 const ShowreelSection = () => {
+  const [activeCategory, setActiveCategory] = useState<ICategory>(
+    categories[0],
+  );
+
   return (
     <section className={cl.showreelSection}>
-      <ShowreelVideos />
-      <ShowreelImages />
+      <Showreel
+        activeCategory={activeCategory}
+        setActiveCategory={setActiveCategory}
+      />
+      <ShowreelSub title={activeCategory.name} subs={activeCategory.subs} />
     </section>
   );
 };
