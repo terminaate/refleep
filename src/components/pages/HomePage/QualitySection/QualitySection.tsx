@@ -7,7 +7,7 @@ import Button from '@/components/UI/Button';
 
 const QualitySection = () => {
   return (
-    <section id={"whyus"} className={cl.qualitySection}>
+    <section id={'whyus'} className={cl.qualitySection}>
       <h2 className={cl.title}>Why us?</h2>
       <div className={cl.qualitiesContainer}>
         <ValueQuality />

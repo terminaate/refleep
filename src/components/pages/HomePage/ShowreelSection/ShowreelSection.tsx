@@ -10,7 +10,7 @@ const ShowreelSection = () => {
   );
 
   return (
-    <section id={"whatwedo"} className={cl.showreelSection}>
+    <section id={'whatwedo'} className={cl.showreelSection}>
       <Showreel
         activeCategory={activeCategory}
         setActiveCategory={setActiveCategory}
