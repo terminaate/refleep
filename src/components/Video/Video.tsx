@@ -14,6 +14,7 @@ const Video: FC<IVideo> = ({
   title,
   fullscreen = true,
   className,
+  src,
   ...props
 }) => {
   const videoRef = useIntersectionObserver<HTMLVideoElement>((isVisible) => {
@@ -43,18 +44,24 @@ const Video: FC<IVideo> = ({
     };
   }, []);
 
+  const onCanPlay = () => {
+    videoRef.current?.play().catch(console.log);
+  }
+
   return (
     <div className={cl.videoContainer}>
       <div className={cl.titleContainer}>
         <h2 className={cl.title}>{title}</h2>
       </div>
       <video
+        src={src}
         ref={videoRef}
         muted={true}
         loop={true}
         playsInline={true}
         controls={false}
         className={classNames(cl.video, className)}
+        onCanPlay={onCanPlay}
         {...props}
       />
       {fullscreen && (
