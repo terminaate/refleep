@@ -7,12 +7,9 @@ import reddotLogo from '$/reddot.svg';
 import theWebbyAwardsLogo from '$/the-webby-awards.svg';
 import fwaLogo from '$/fwa.svg';
 import scrollImg from '$/scroll.svg';
-import { useParallax } from 'react-scroll-parallax';
 import Separator from '@/components/Separator';
 
 const HomeSection = () => {
-  const { ref: requestDesignButtonRef } = useParallax({ speed: 4 });
-
   return (
     <section className={cl.homeSection}>
       <div className={cl.container}>
@@ -38,9 +35,7 @@ const HomeSection = () => {
         </div>
       </div>
       <Image src={scrollImg} alt={'scroll'} className={cl.scrollIcon} />
-      <Button ref={requestDesignButtonRef} className={cl.requestDesignButton}>
-        Request a design...
-      </Button>
+      <Button className={cl.requestDesignButton}>Request a design...</Button>
       <Separator />
     </section>
   );

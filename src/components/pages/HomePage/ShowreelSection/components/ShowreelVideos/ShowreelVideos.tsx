@@ -32,7 +32,7 @@ const ShowreelVideos = () => {
           ))}
         </div>
       </div>
-      <Video title={'Showreel'} src={activeVideo.src} />
+      <Video fullscreen={false} title={'Showreel'} src={activeVideo.src} />
     </div>
   );
 };
