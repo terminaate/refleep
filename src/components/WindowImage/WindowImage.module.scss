@@ -6,7 +6,8 @@
   flex-direction: column;
   position: relative;
   backdrop-filter: blur(25px);
-  box-shadow: -25px 21px 100px rgba(0, 122, 255, 0.25), 17px 13px 81px rgba(0, 122, 255, 0.35);
+  box-shadow: -25px 21px 100px rgba(0, 122, 255, 0.25),
+    17px 13px 81px rgba(0, 122, 255, 0.35);
   background-color: var(--background-third);
 
   .titleContainer {
@@ -19,7 +20,7 @@
     color: var(--video-title);
     border-radius: 10px 10px 0 0;
     box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.15),
-    inset 0px -0.5px 0px rgba(0, 0, 0, 0.05);
+      inset 0px -0.5px 0px rgba(0, 0, 0, 0.05);
 
     .title {
       color: var(--video-title);

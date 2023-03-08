@@ -9,7 +9,7 @@ import fwaLogo from '$/fwa.svg';
 import scrollImg from '$/scroll.svg';
 import Separator from '@/components/Separator';
 import useMediaQuery from '@/hooks/useMediaQuery';
-import penIcon from "$/pen.svg";
+import penIcon from '$/pen.svg';
 
 const HomeSection = () => {
   const isMobile = useMediaQuery('(max-width: 800px)');
