@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import cl from './Project.module.scss';
 import Image from 'next/image';
+
 export interface IProject {
   type: string;
   title: string;

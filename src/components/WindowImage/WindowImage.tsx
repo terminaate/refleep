@@ -1,5 +1,5 @@
 import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 import cl from './WindowImage.module.scss';
 
 interface IWindowImage extends HTMLMotionProps<'img'> {

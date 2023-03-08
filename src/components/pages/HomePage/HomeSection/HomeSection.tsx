@@ -8,11 +8,23 @@ import theWebbyAwardsLogo from '$/the-webby-awards.svg';
 import fwaLogo from '$/fwa.svg';
 import scrollImg from '$/scroll.svg';
 import Separator from '@/components/Separator';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import penIcon from "$/pen.svg";
 
 const HomeSection = () => {
+  const isMobile = useMediaQuery('(max-width: 800px)');
+
   return (
     <section className={cl.homeSection}>
       <div className={cl.container}>
+        {isMobile && (
+          <div className={cl.awardsContainer}>
+            <Image src={awwwardsLogo} alt={'awwwards'} />
+            <Image src={reddotLogo} alt={'reddot'} />
+            <Image src={theWebbyAwardsLogo} alt={'the webby awards'} />
+            <Image src={fwaLogo} alt={'fwa'} />
+          </div>
+        )}
         <div className={cl.leftSideContainer}>
           <h2 className={cl.title}>Watch Your Business Flourish</h2>
           <span className={cl.description}>
@@ -35,7 +47,13 @@ const HomeSection = () => {
         </div>
       </div>
       <Image src={scrollImg} alt={'scroll'} className={cl.scrollIcon} />
-      <Button className={cl.requestDesignButton}>Request a design...</Button>
+      <Button className={cl.requestDesignButton}>
+        {isMobile ? (
+          <Image src={penIcon} alt={'request design image'} />
+        ) : (
+          'Request a design...'
+        )}
+      </Button>
       <Separator />
     </section>
   );
