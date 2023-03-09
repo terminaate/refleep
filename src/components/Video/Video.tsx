@@ -8,11 +8,13 @@ import classNames from 'classnames';
 interface IVideo extends VideoHTMLAttributes<HTMLVideoElement> {
   title: string;
   fullscreen?: boolean;
+  containerClassName?: string;
 }
 
 const Video: FC<IVideo> = ({
   title,
   fullscreen = true,
+  containerClassName,
   className,
   src,
   ...props
@@ -49,7 +51,7 @@ const Video: FC<IVideo> = ({
   };
 
   return (
-    <div className={cl.videoContainer}>
+    <div className={classNames(cl.videoContainer, containerClassName)}>
       <div className={cl.titleContainer}>
         <h2 className={cl.title}>{title}</h2>
       </div>

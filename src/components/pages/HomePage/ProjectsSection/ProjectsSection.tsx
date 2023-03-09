@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       <Button className={cl.casesButton} background={false}>
         See case studies
       </Button>
-      <Separator side={'left'} />
+      <Separator className={cl.separator} side={'left'} />
     </section>
   );
 };

@@ -22,7 +22,7 @@ const ShowreelSub: FC<IShowreelSub> = ({ subs, title }) => {
       {activeSub.type === 'video' ? (
         <Video fullscreen={false} title={'video'} src={activeSub.src} />
       ) : (
-        <WindowImage title={'img'} src={activeSub.src} />
+        <WindowImage title={'img'} src={activeSub.src} alt={activeSub.name} />
       )}
       <div className={cl.rightSideContainer}>
         <h2 className={cl.title}>{title}</h2>

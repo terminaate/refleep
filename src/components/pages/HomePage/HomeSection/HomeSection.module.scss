@@ -67,6 +67,7 @@
         margin-top: 43px;
         padding: 0;
         column-gap: 20px;
+        //padding-bottom: 82px;
       }
 
       .leftSideContainer {
@@ -78,6 +79,10 @@
           font-size: 3.2em;
           line-height: 120%;
           max-width: 177px;
+
+          @media screen and (max-width: 800px) {
+            max-width: max-content;
+          }
         }
 
         .description {
@@ -85,6 +90,10 @@
           font-size: 1.4em;
           line-height: 120%;
           max-width: 163px;
+
+          @media screen and (max-width: 800px) {
+            //width: 163px;
+          }
         }
 
         .modalButton {
@@ -123,6 +132,8 @@
   @media screen and (max-width: 800px) {
     justify-content: flex-start;
     margin-top: 80px;
+    height: auto;
+    padding-bottom: 82px;
 
     .scrollIcon {
       display: none;

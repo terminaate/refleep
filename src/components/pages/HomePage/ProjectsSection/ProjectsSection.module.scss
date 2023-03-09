@@ -14,4 +14,19 @@
     font-size: 28px;
     line-height: 56%;
   }
+
+  @media screen and (max-width: 800px) {
+    padding-bottom: 0;
+
+    .casesButton {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 112%;
+      padding: 11px 22px;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
 }

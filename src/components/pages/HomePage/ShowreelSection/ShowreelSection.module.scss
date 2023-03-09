@@ -4,4 +4,8 @@
   row-gap: 130px;
   flex-direction: column;
   padding-top: 131px;
+
+  @media screen and (max-width: 800px) {
+    padding-top: 42px;
+  }
 }

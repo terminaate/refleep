@@ -9,6 +9,11 @@
     row-gap: 64px;
     width: 620px;
 
+    @media screen and (max-width: 800px) {
+      row-gap: 30px;
+      width: 100%;
+    }
+
     .title {
       font-family: var(--font-primary);
       font-weight: 600;
@@ -27,6 +32,10 @@
       flex-wrap: wrap;
       //padding-right: 17px;
 
+      @media screen and (max-width: 800px) {
+        gap: 12px;
+      }
+
       button {
         padding: 7px 21px;
         gap: 10px;
@@ -36,6 +45,11 @@
         font-size: 24px;
         line-height: 28px;
         font-family: var(--font-primary);
+
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
 
         div {
           width: 8px;
@@ -49,6 +63,14 @@
           border-color: var(--text-inactive);
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    padding-inline: 20px;
+
+    .video {
+      display: none;
     }
   }
 }

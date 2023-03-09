@@ -5,6 +5,8 @@ import logoImg from '$/logo.svg';
 import { categories, ICategory } from './Showreel.const';
 import Button from '@/components/UI/Button';
 import Video from '@/components/Video';
+import useMediaQuery from '@/hooks/useMediaQuery';
+import { useRouter } from 'next/navigation';
 
 interface IShowreel {
   activeCategory: ICategory;
@@ -12,6 +14,9 @@ interface IShowreel {
 }
 
 const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
+  const router = useRouter();
+  const isMobile = useMediaQuery("(max-width: 800px)");
+
   return (
     <div className={cl.videosContainer}>
       <div className={cl.leftSideContainer}>
@@ -27,7 +32,7 @@ const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
         <div className={cl.buttonsContainer}>
           {categories.map((category, key) => (
             <Button
-              onClick={() => setActiveCategory(category)}
+              onClick={() => isMobile ? router.push("/cases") :setActiveCategory(category)}
               key={key}
               background={activeCategory.name === category.name}
             >
@@ -38,7 +43,7 @@ const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
           ))}
         </div>
       </div>
-      <Video fullscreen={false} title={'Showreel'} src={activeCategory.src} />
+      <Video containerClassName={cl.video} fullscreen={false} title={'Showreel'} src={activeCategory.src} />
     </div>
   );
 };

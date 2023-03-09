@@ -74,4 +74,35 @@
     text-align: left;
     width: 270px;
   }
+
+  @media screen and (max-width: 800px) {
+    padding-inline: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 8px;
+    height: 186px;
+
+    .projectTitleContainer {
+      row-gap: 6px;
+
+      .projectType {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .projectTitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+
+    .projectDescription {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }
