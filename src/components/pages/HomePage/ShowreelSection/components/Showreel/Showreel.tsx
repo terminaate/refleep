@@ -15,7 +15,7 @@ interface IShowreel {
 
 const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
   const router = useRouter();
-  const isMobile = useMediaQuery("(max-width: 800px)");
+  const isMobile = useMediaQuery('(max-width: 800px)');
 
   return (
     <div className={cl.videosContainer}>
@@ -32,7 +32,9 @@ const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
         <div className={cl.buttonsContainer}>
           {categories.map((category, key) => (
             <Button
-              onClick={() => isMobile ? router.push("/cases") :setActiveCategory(category)}
+              onClick={() =>
+                isMobile ? router.push('/cases') : setActiveCategory(category)
+              }
               key={key}
               background={activeCategory.name === category.name}
             >
@@ -43,7 +45,12 @@ const Showreel: FC<IShowreel> = ({ activeCategory, setActiveCategory }) => {
           ))}
         </div>
       </div>
-      <Video containerClassName={cl.video} fullscreen={false} title={'Showreel'} src={activeCategory.src} />
+      <Video
+        containerClassName={cl.video}
+        fullscreen={false}
+        title={'Showreel'}
+        src={activeCategory.src}
+      />
     </div>
   );
 };

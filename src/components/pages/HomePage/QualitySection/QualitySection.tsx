@@ -8,7 +8,7 @@ import Separator from '@/components/Separator';
 import useMediaQuery from '@/hooks/useMediaQuery';
 
 const QualitySection = () => {
-  const isMobile = useMediaQuery("(max-width: 800px)")
+  const isMobile = useMediaQuery('(max-width: 800px)');
 
   return (
     <section id={'whyus'} className={cl.qualitySection}>
