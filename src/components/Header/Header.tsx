@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import cl from './Header.module.scss';
 import logoImg from '$/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import HeaderBurgerMenu from '@/components/HeaderBurgerMenu';
 
-const Header = () => {
+interface IHeader {
+  absolute: boolean;
+}
+
+const Header: FC<IHeader> = ({ absolute = false }) => {
   const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
     <>
-      <header className={cl.container}>
-        <Image src={logoImg} alt={'logo'} className={cl.logoImage} />
+      <header data-absolute={absolute} className={cl.headerContainer}>
+        <Link className={cl.homeLink} href='/'>
+          <Image src={logoImg} alt={'logo'} className={cl.logoImage} />
+        </Link>
         <button onClick={() => setBurgerMenu(true)} className={cl.menuButton}>
           <span />
           <span />
           <span />
         </button>
-        <div className={cl.linksContainer}>
-          <Link href={''}>Case studies</Link>
-          <a href={'#whatwedo'}>What we do</a>
-          <a href={'#whyus'}>Why us</a>
-        </div>
+        <nav className={cl.linksContainer}>
+          <Link href={'/cases'}>Case studies</Link>
+          <Link href={'/#whatwedo'}>What we do</Link>
+          <Link href={'/#whyus'}>Why us</Link>
+        </nav>
       </header>
       <HeaderBurgerMenu visible={burgerMenu} setVisible={setBurgerMenu} />
     </>

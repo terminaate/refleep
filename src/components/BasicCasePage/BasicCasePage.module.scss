@@ -1,0 +1,57 @@
+.casePage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .caseHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+    .headerImage {
+      z-index: -1;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .headerContent {
+      display: flex;
+      align-items: flex-start;
+      row-gap: 32px;
+      flex-direction: column;
+      max-width: 1011px;
+      position: absolute;
+      //margin-top: 270px;
+
+      .secondaryTitle {
+        font-family: var(--font-primary);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 132%;
+        letter-spacing: -0.475px;
+        color: var(--text-primary);
+        mix-blend-mode: difference;
+      }
+
+      .title {
+        font-family: var(--font-primary);
+        color: var(--text-primary);
+        font-weight: 600;
+        font-size: 82px;
+        line-height: 116%;
+        letter-spacing: -2.1375px;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+
+  .container {
+    margin-top: 111px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

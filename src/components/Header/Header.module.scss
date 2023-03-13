@@ -1,6 +1,6 @@
 @import '#/functions.scss';
 
-.container {
+.headerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,10 +9,30 @@
   padding-left: 82px;
   padding-right: 59px;
   padding-block: 30px;
+  backdrop-filter: blur(15px);
 
-  .logoImage {
-    height: 42px;
-    width: min-content;
+  &[data-absolute="true"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+
+  .homeLink {
+    background: none;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: max-content;
+
+    .logoImage {
+      height: 42px;
+      width: min-content;
+    }
   }
 
   .linksContainer {
@@ -83,9 +103,11 @@
       display: flex;
     }
 
-    .logoImage {
-      height: 28px;
-      width: 100px;
+    .homeLink {
+      .logoImage {
+        height: 28px;
+        width: 100px;
+      }
     }
   }
 }

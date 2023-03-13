@@ -4,9 +4,10 @@ import classNames from 'classnames';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-interface IBasicPage extends HTMLAttributes<HTMLDivElement> {
+export interface IBasicPage extends HTMLAttributes<HTMLDivElement> {
   header?: boolean;
   footer?: boolean;
+  absoluteHeader?: boolean;
 }
 
 const BasicPage: FC<IBasicPage> = ({
@@ -14,11 +15,12 @@ const BasicPage: FC<IBasicPage> = ({
   children,
   header = true,
   footer = true,
+  absoluteHeader = false,
   ...props
 }) => {
   return (
     <div className={classNames(cl.basicPage, className)} {...props}>
-      {header && <Header />}
+      {header && <Header absolute={absoluteHeader}/>}
       {children}
       {footer && <Footer />}
     </div>

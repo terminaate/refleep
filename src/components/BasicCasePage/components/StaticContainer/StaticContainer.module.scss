@@ -1,0 +1,16 @@
+@import "#/functions.scss";
+
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-top: 130px;
+  max-width: pxToVw(1240);
+
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 40px;
+  }
+}

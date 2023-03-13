@@ -9,6 +9,7 @@ import Button from '@/components/UI/Button';
 import telegramIcon from '$/telegram.svg';
 import whatsappIcon from '$/whatsapp.svg';
 import instagramIcon from '$/instagram.svg';
+import Link from 'next/link';
 
 interface IHeaderBurgerMenu {
   visible: boolean;
@@ -27,7 +28,7 @@ const HeaderBurgerMenu: FC<IHeaderBurgerMenu> = ({ visible, setVisible }) => {
           <div onClick={closeMenu} className={cl.container}>
             <Image className={cl.logo} src={darkLogoImg} alt={'refleep'} />
             <div className={cl.linksContainer}>
-              <a href="">CASE STUDIES</a>
+              <Link href="/cases">CASE STUDIES</Link>
               <a href="#whatwedo">What we do</a>
               <a href="#whyus">WHY US</a>
             </div>

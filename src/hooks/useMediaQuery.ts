@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function useMediaQuery(query: string): boolean {
   const [matches, setMatches] = useState<boolean>(false);
@@ -7,7 +7,7 @@ export default function useMediaQuery(query: string): boolean {
     setMatches(event.matches);
   }
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const matchMedia = window.matchMedia(query);
 
     // Triggered at the first client-side load and if query changes

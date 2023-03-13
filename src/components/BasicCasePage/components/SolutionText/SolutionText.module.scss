@@ -1,0 +1,13 @@
+.solutionContainer {
+  row-gap: 52px;
+
+  .solutionTitle {
+    font-size: 110px;
+    line-height: 129px;
+  }
+
+  &:after {
+    background-image: none;
+    display: none;
+  }
+}
