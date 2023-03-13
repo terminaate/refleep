@@ -15,7 +15,7 @@ const Header: FC<IHeader> = ({ absolute = false }) => {
   return (
     <>
       <header data-absolute={absolute} className={cl.headerContainer}>
-        <Link className={cl.homeLink} href='/'>
+        <Link className={cl.homeLink} href="/">
           <Image src={logoImg} alt={'logo'} className={cl.logoImage} />
         </Link>
         <button onClick={() => setBurgerMenu(true)} className={cl.menuButton}>

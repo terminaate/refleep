@@ -20,7 +20,7 @@ const BasicPage: FC<IBasicPage> = ({
 }) => {
   return (
     <div className={classNames(cl.basicPage, className)} {...props}>
-      {header && <Header absolute={absoluteHeader}/>}
+      {header && <Header absolute={absoluteHeader} />}
       {children}
       {footer && <Footer />}
     </div>

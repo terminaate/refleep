@@ -4,7 +4,11 @@ import classNames from 'classnames';
 
 type ImagesContainerProps = HTMLAttributes<HTMLDivElement>;
 
-const StaticContainer: FC<ImagesContainerProps> = ({children, className, ...props}) => {
+const StaticContainer: FC<ImagesContainerProps> = ({
+  children,
+  className,
+  ...props
+}) => {
   return (
     <div className={classNames(cl.imagesContainer, className)} {...props}>
       {children}

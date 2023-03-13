@@ -1,4 +1,4 @@
-import CasesSection from "./CasesSection";
+import CasesSection from './CasesSection';
 
 export * from './CasesSection';
 export default CasesSection;

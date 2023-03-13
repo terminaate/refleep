@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 import cl from './TextContainer.module.scss';
 import classNames from 'classnames';
 import { FCWithChildren } from '@/types/FCWithChildren';

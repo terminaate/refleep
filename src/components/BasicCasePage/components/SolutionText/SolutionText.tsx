@@ -3,7 +3,7 @@ import cl from './SolutionText.module.scss';
 import TextContainer from '../TextContainer';
 
 interface ISolutionText {
-content: string;
+  content: string;
 }
 
 const SolutionText: FC<ISolutionText> = ({ content }) => (

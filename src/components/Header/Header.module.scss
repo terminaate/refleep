@@ -11,13 +11,12 @@
   padding-block: 30px;
   backdrop-filter: blur(15px);
 
-  &[data-absolute="true"] {
+  &[data-absolute='true'] {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
   }
-
 
   .homeLink {
     background: none;
