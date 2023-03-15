@@ -5,7 +5,10 @@ import { FCWithChildren } from '@/types/FCWithChildren';
 import Title from './components/Title';
 import Description from './components/Description';
 
-type TextContainerProps = HTMLAttributes<HTMLDivElement>;
+interface ITextContainer extends HTMLAttributes<HTMLDivElement> {
+  padding?: boolean;
+  afterLine?: boolean;
+}
 
 interface ITextContainerChildren {
   Title: typeof Title;
@@ -13,10 +16,10 @@ interface ITextContainerChildren {
 }
 
 const TextContainer: FCWithChildren<
-  TextContainerProps,
+  ITextContainer,
   ITextContainerChildren
-> = ({ children, className, ...props }) => (
-  <div className={classNames(cl.textContainer, className)} {...props}>
+> = ({ children, className, padding=true, afterLine=true, ...props }) => (
+  <div data-padding={padding} data-line={afterLine} className={classNames(cl.textContainer, className)} {...props}>
     {children}
   </div>
 );

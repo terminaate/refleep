@@ -1,16 +1,33 @@
 @import '#/functions.scss';
 
+
 .imagesContainer {
   display: flex;
+  align-items: center;
   flex-direction: column;
   row-gap: 50px;
-  margin-top: 130px;
+  margin-block: 130px;
   max-width: pxToVw(1240);
+
+  @mixin normalize-image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+
 
   div {
     display: flex;
-    align-items: center;
     width: 100%;
     column-gap: 40px;
+
+    img {
+      @include normalize-image;
+    }
+  }
+
+  img {
+    @include normalize-image;
   }
 }

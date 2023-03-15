@@ -1,0 +1,11 @@
+.clientContainer {
+  row-gap: 18px;
+
+  .clientTitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -1.425px;
+  }
+}

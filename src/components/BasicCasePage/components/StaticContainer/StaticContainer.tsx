@@ -2,9 +2,9 @@ import { FC, HTMLAttributes } from 'react';
 import cl from './StaticContainer.module.scss';
 import classNames from 'classnames';
 
-type ImagesContainerProps = HTMLAttributes<HTMLDivElement>;
+type StaticContainerProps = HTMLAttributes<HTMLDivElement>;
 
-const StaticContainer: FC<ImagesContainerProps> = ({
+const StaticContainer: FC<StaticContainerProps> = ({
   children,
   className,
   ...props
