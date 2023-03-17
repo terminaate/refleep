@@ -1,10 +1,20 @@
 import cl from './Footer.module.scss';
 import { socials } from './Footer.const';
 import Image from 'next/image';
+import { FC } from 'react';
+import classNames from 'classnames';
 
-const Footer = () => {
+interface IFooter {
+  absolute?: boolean;
+  className?: string;
+}
+
+const Footer: FC<IFooter> = ({ absolute = false, className }) => {
   return (
-    <footer className={cl.footer}>
+    <footer
+      data-absolute={absolute}
+      className={classNames(cl.footer, className)}
+    >
       <div className={cl.container}>
         <div className={cl.socialsContainer}>
           <a className={cl.emailLink} href={'mailto:hello@refleep.com'}>

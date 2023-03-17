@@ -15,11 +15,19 @@ interface ITextContainerChildren {
   Description: typeof Description;
 }
 
-const TextContainer: FCWithChildren<
-  ITextContainer,
-  ITextContainerChildren
-> = ({ children, className, padding=true, afterLine=true, ...props }) => (
-  <div data-padding={padding} data-line={afterLine} className={classNames(cl.textContainer, className)} {...props}>
+const TextContainer: FCWithChildren<ITextContainer, ITextContainerChildren> = ({
+  children,
+  className,
+  padding = true,
+  afterLine = true,
+  ...props
+}) => (
+  <div
+    data-padding={padding}
+    data-line={afterLine}
+    className={classNames(cl.textContainer, className)}
+    {...props}
+  >
     {children}
   </div>
 );

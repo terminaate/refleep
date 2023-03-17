@@ -1,4 +1,4 @@
-import CaseVideo from "./CaseVideo";
+import CaseVideo from './CaseVideo';
 
 export * from './CaseVideo';
 export default CaseVideo;

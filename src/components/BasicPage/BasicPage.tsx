@@ -8,6 +8,8 @@ export interface IBasicPage extends HTMLAttributes<HTMLDivElement> {
   header?: boolean;
   footer?: boolean;
   absoluteHeader?: boolean;
+  absoluteFooter?: boolean;
+  footerClassName?: string;
 }
 
 const BasicPage: FC<IBasicPage> = ({
@@ -16,13 +18,17 @@ const BasicPage: FC<IBasicPage> = ({
   header = true,
   footer = true,
   absoluteHeader = false,
+  absoluteFooter = false,
+  footerClassName,
   ...props
 }) => {
   return (
     <div className={classNames(cl.basicPage, className)} {...props}>
       {header && <Header absolute={absoluteHeader} />}
       {children}
-      {footer && <Footer />}
+      {footer && (
+        <Footer className={footerClassName} absolute={absoluteFooter} />
+      )}
     </div>
   );
 };

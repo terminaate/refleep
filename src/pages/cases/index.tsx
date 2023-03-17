@@ -18,9 +18,7 @@ const Cases = () => {
         <title>Refleep Studio | Case Studies</title>
       </Head>
       <BasicPage>
-        <div className={cl.container}>
-          <CasesSection />
-        </div>
+        <CasesSection />
       </BasicPage>
     </>
   );

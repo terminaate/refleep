@@ -1,0 +1,114 @@
+@import '#/functions.scss';
+
+.notFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://refleep.netlify.app/404.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .container {
+    $border-primary: #30363d;
+
+    width: pxToVw(1240);
+    //min-height: pxToVh(620);
+    min-width: 400px;
+    background-color: var(--background-window);
+    border-radius: 8px;
+    border: 1px solid $border-primary;
+    row-gap: 30px;
+    padding: 1px 1px 65px;
+
+    .headerContainer {
+      border-bottom: 1px solid $border-primary;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 16px;
+      min-height: 64px;
+
+      .arrowsContainer {
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+
+        .arrowContainer {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .linkContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 9px;
+        height: 31px;
+        min-width: 292px;
+        border-radius: 6px;
+        border: 1px solid $border-primary;
+        background-color: #0d1117;
+
+        span {
+          font-family: var(--font-primary);
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 162%;
+          color: var(--text-primary);
+        }
+      }
+    }
+
+    .notFoundContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .title {
+        font-family: var(--font-primary);
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 234px;
+        letter-spacing: 2px;
+      }
+
+      .description {
+        font-family: var(--font-primary);
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 128%;
+        color: var(--text-secondary);
+        margin-top: 39px;
+        text-align: center;
+        max-width: 730px;
+      }
+
+      .homeButton {
+        font-family: var(--font-primary);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 128%;
+        letter-spacing: 2px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .footer {
+    // Copyright container
+    div:nth-child(3) span {
+      color: var(--text-primary) !important;
+    }
+
+    @media screen and (max-width: 800px) {
+    }
+  }
+}
