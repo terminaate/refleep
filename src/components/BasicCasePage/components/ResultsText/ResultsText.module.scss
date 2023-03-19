@@ -1,0 +1,13 @@
+.resultsTextContainer {
+  row-gap: 34px;
+  align-items: center;
+  margin-top: 50px;
+  width: 814px;
+
+  .resultsTitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 66px;
+  }
+}

@@ -20,6 +20,7 @@ html {
   --text-primary: #fff;
   --text-alter-primary: #3e3e3f;
   --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-secondary-border: rgba(255, 255, 255, 0.25);
   --text-description: #aeaeb2;
   --text-inactive: #6e6e73;
   --text-thrid: #8a8b95;

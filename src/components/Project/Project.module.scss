@@ -13,6 +13,10 @@
   overflow: hidden;
   cursor: pointer;
 
+  &[data-absolute-width="true"] {
+    min-width: 100vw;
+  }
+
   .projectImage {
     z-index: -1;
     opacity: 0;

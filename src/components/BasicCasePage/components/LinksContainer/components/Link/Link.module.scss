@@ -1,0 +1,19 @@
+.link {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -0.57px;
+  line-height: 127%;
+  color: var(--text-primary);
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-secondary-border);
+  }
+}

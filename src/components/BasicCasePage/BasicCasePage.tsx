@@ -7,6 +7,9 @@ import SolutionText from './components/SolutionText';
 import StaticContainer from './components/StaticContainer';
 import CaseVideo from './components/CaseVideo';
 import ClientText from './components/ClientText';
+import AuthorContainer from './components/AuthorContainer';
+import ResultsText from './components/ResultsText';
+import LinksContainer from './components/LinksContainer';
 
 interface IBasicCasePage extends Omit<IBasicPage, 'absoluteHeader'> {
   image: string;
@@ -19,7 +22,10 @@ interface IBasicCasePageChildren {
   ChallengeText: typeof ChallengeText;
   SolutionText: typeof SolutionText;
   ClientText: typeof ClientText;
+  ResultsText: typeof ResultsText;
   StaticContainer: typeof StaticContainer;
+  AuthorContainer: typeof AuthorContainer;
+  LinksContainer: typeof LinksContainer;
   CaseVideo: typeof CaseVideo;
 }
 
@@ -47,7 +53,10 @@ BasicCasePage.TextContainer = TextContainer;
 BasicCasePage.SolutionText = SolutionText;
 BasicCasePage.ChallengeText = ChallengeText;
 BasicCasePage.ClientText = ClientText;
+BasicCasePage.ResultsText = ResultsText;
 BasicCasePage.StaticContainer = StaticContainer;
+BasicCasePage.AuthorContainer = AuthorContainer;
+BasicCasePage.LinksContainer = LinksContainer;
 BasicCasePage.CaseVideo = CaseVideo;
 
 export default BasicCasePage;

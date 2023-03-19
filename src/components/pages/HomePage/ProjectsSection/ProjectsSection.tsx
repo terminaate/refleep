@@ -1,13 +1,15 @@
 import cl from './ProjectsSection.module.scss';
-import Project from './components/Project';
-import { projects } from './ProjectsSection.const';
+import Project from '@/components/Project';
+import { projects } from '@/data/projects';
 import Separator from '@/components/Separator';
 import Button from '@/components/UI/Button';
+
+const threeProjects = projects.slice(0, 3);
 
 const ProjectsSection = () => {
   return (
     <section className={cl.projectsSection}>
-      {projects.map((projectData, key) => (
+      {threeProjects.map((projectData, key) => (
         <>
           <Project {...projectData} key={key} />
           {key !== projects.length - 1 && (

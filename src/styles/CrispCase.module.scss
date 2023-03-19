@@ -1,0 +1,54 @@
+.skillsAppliedContainer {
+  margin-top: 130px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 23px;
+  width: 372px;
+
+  .skillsAppliedTitle {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 119%;
+    letter-spacing: -1.425px;
+    color: var(--text-primary)
+  }
+
+  .experienceContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-block: 60px;
+    width: 100%;
+
+    .experienceTitle {
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 42px;
+      letter-spacing: -0.5px;
+    }
+
+    .experienceList {
+      display: flex;
+      row-gap: 8px;
+      flex-direction: column;
+      list-style-type: none;
+
+      li {
+        font-family: var(--font-primary);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 132%;
+        letter-spacing: -0.475px;
+        color: var(--text-secondary);
+      }
+    }
+  }
+}
+
+.project {
+  margin-top: 50px;
+  margin-bottom: 130px;
+}

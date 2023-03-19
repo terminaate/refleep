@@ -7,8 +7,11 @@ import lockImg from '$/lock.svg';
 import reloadImg from '$/reload.svg';
 import plusImg from '$/plus.svg';
 import Button from '@/components/UI/Button';
+import { useRouter } from 'next/navigation';
 
 const NotFoundPage = () => {
+  const router = useRouter();
+
   return (
     <BasicPage
       className={cl.notFoundPage}
@@ -36,10 +39,10 @@ const NotFoundPage = () => {
         <div className={cl.notFoundContainer}>
           <h1 className={cl.title}>404</h1>
           <span className={cl.description}>
-            The page you&apos;re trying to reach is unavailable, but the website is
-            still live and we&apos;re ready to work!
+            The page you&apos;re trying to reach is unavailable, but the website
+            is still live and we&apos;re ready to work!
           </span>
-          <Button className={cl.homeButton}>Go to main</Button>
+          <Button onClick={() => router.push("/")} className={cl.homeButton}>Go to main</Button>
         </div>
       </div>
     </BasicPage>

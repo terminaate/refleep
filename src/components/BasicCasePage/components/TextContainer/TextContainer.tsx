@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { FCWithChildren } from '@/types/FCWithChildren';
 import Title from './components/Title';
 import Description from './components/Description';
+import Separator from '@/components/Separator';
 
 interface ITextContainer extends HTMLAttributes<HTMLDivElement> {
   padding?: boolean;

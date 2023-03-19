@@ -8,7 +8,7 @@ interface ISolutionText {
 }
 
 const SolutionText: FC<ISolutionText> = ({ content, children }) => (
-  <TextContainer className={cl.solutionContainer}>
+  <TextContainer afterLine={false} className={cl.solutionContainer}>
     <TextContainer.Title className={cl.solutionTitle}>
       The solution
     </TextContainer.Title>
