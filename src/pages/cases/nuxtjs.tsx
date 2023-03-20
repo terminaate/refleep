@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import BasicCasePage from '@/components/BasicCasePage';
+import { projects } from '@/data/projects';
+import Project from '@/components/Project';
+import cl from "#/NuxtjsCase.module.scss";
+
+const crispProject = projects.find((o) => (o.title = 'CRISP'))!;
 
 const Nuxtjs = () => {
   return (
@@ -322,7 +327,7 @@ const Nuxtjs = () => {
           supporting documentation, including visual identity guidelines, UX
           research, and a web design system for ease of use and implementation.
         </p>
-        <br/>
+        <br />
         <p>
           The Nuxt team decided to take their brand in a different direction and
           launched a revised brand and website environment almost 18 months
@@ -330,6 +335,8 @@ const Nuxtjs = () => {
           our work and wish all the best to Alex and Sébastien in their journey.
         </p>
       </BasicCasePage.ResultsText>
+      <BasicCasePage.SkillsAppliedContainer/>
+      <Project className={cl.project} absoluteWidth={true} {...crispProject} />
     </BasicCasePage>
   );
 };

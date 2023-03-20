@@ -8,7 +8,11 @@ interface IResultsText {
   margin?: boolean;
 }
 
-const ResultsText: FC<IResultsText> = ({ children, content , margin=true }) => {
+const ResultsText: FC<IResultsText> = ({
+  children,
+  content,
+  margin = true,
+}) => {
   return (
     <TextContainer
       padding={false}

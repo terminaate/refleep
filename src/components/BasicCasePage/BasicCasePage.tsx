@@ -10,6 +10,7 @@ import ClientText from './components/ClientText';
 import AuthorContainer from './components/AuthorContainer';
 import ResultsText from './components/ResultsText';
 import LinksContainer from './components/LinksContainer';
+import SkillsAppliedContainer from './components/SkillsAppliedContainer';
 
 interface IBasicCasePage extends Omit<IBasicPage, 'absoluteHeader'> {
   image: string;
@@ -26,6 +27,7 @@ interface IBasicCasePageChildren {
   StaticContainer: typeof StaticContainer;
   AuthorContainer: typeof AuthorContainer;
   LinksContainer: typeof LinksContainer;
+  SkillsAppliedContainer: typeof SkillsAppliedContainer;
   CaseVideo: typeof CaseVideo;
 }
 
@@ -57,6 +59,7 @@ BasicCasePage.ResultsText = ResultsText;
 BasicCasePage.StaticContainer = StaticContainer;
 BasicCasePage.AuthorContainer = AuthorContainer;
 BasicCasePage.LinksContainer = LinksContainer;
+BasicCasePage.SkillsAppliedContainer = SkillsAppliedContainer;
 BasicCasePage.CaseVideo = CaseVideo;
 
 export default BasicCasePage;
