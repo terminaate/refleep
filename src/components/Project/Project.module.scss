@@ -13,7 +13,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  &[data-absolute-width="true"] {
+  &[data-absolute-width='true'] {
     min-width: 100vw;
   }
 

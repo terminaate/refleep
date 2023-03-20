@@ -1,4 +1,4 @@
-import ResultsText from "./ResultsText";
+import ResultsText from './ResultsText';
 
 export * from './ResultsText';
 export default ResultsText;

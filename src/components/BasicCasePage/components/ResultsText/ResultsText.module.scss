@@ -1,8 +1,11 @@
 .resultsTextContainer {
   row-gap: 34px;
   align-items: center;
-  margin-top: 50px;
   width: 814px;
+
+  &[data-margin="true"] {
+    margin-top: 50px;
+  }
 
   .resultsTitle {
     font-family: var(--font-primary);

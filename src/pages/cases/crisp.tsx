@@ -1,12 +1,12 @@
 import BasicCasePage from '@/components/BasicCasePage';
 import Image from 'next/image';
 import Head from 'next/head';
-import cl from "#/CrispCase.module.scss";
+import cl from '#/CrispCase.module.scss';
 import Project from '@/components/Project';
 import { projects } from '@/data/projects';
 import Separator from '@/components/Separator';
 
-const immoProject = projects.find(o => o.title === "IMMO")!;
+const immoProject = projects.find((o) => o.title === 'IMMO')!;
 
 const Crisp = () => {
   return (
@@ -207,10 +207,10 @@ const Crisp = () => {
           }
         />
         <BasicCasePage.LinksContainer>
-          <BasicCasePage.LinksContainer.Link href={"#"}>
+          <BasicCasePage.LinksContainer.Link href={'#'}>
             Crisp iOS
           </BasicCasePage.LinksContainer.Link>
-          <BasicCasePage.LinksContainer.Link href={"#"}>
+          <BasicCasePage.LinksContainer.Link href={'#'}>
             Crisp Android
           </BasicCasePage.LinksContainer.Link>
         </BasicCasePage.LinksContainer>
@@ -226,7 +226,7 @@ const Crisp = () => {
             </ul>
           </ul>
         </div>
-        <Project className={cl.project} absoluteWidth={true} {...immoProject}/>
+        <Project className={cl.project} absoluteWidth={true} {...immoProject} />
       </BasicCasePage>
     </>
   );

@@ -7,12 +7,11 @@ interface ILinksContainerChildren {
   Link: typeof Link;
 }
 
-const LinksContainer: FCWithChildren<PropsWithChildren, ILinksContainerChildren> = ({children}) => {
-  return (
-    <div className={cl.linksContainer}>
-      {children}
-    </div>
-  );
+const LinksContainer: FCWithChildren<
+  PropsWithChildren,
+  ILinksContainerChildren
+> = ({ children }) => {
+  return <div className={cl.linksContainer}>{children}</div>;
 };
 
 LinksContainer.Link = Link;

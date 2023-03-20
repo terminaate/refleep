@@ -42,7 +42,9 @@ const NotFoundPage = () => {
             The page you&apos;re trying to reach is unavailable, but the website
             is still live and we&apos;re ready to work!
           </span>
-          <Button onClick={() => router.push("/")} className={cl.homeButton}>Go to main</Button>
+          <Button onClick={() => router.push('/')} className={cl.homeButton}>
+            Go to main
+          </Button>
         </div>
       </div>
     </BasicPage>
