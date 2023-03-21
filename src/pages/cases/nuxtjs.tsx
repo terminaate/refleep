@@ -2,7 +2,7 @@ import Image from 'next/image';
 import BasicCasePage from '@/components/BasicCasePage';
 import { projects } from '@/data/projects';
 import Project from '@/components/Project';
-import cl from "#/NuxtjsCase.module.scss";
+import cl from '#/NuxtjsCase.module.scss';
 
 const crispProject = projects.find((o) => (o.title = 'CRISP'))!;
 
@@ -335,7 +335,9 @@ const Nuxtjs = () => {
           our work and wish all the best to Alex and Sébastien in their journey.
         </p>
       </BasicCasePage.ResultsText>
-      <BasicCasePage.SkillsAppliedContainer/>
+      <BasicCasePage.SkillsAppliedContainer categories={[
+        { title: 'Branding', list: ['Visual strategy', 'Brand guidelines'] },
+      ]} />
       <Project className={cl.project} absoluteWidth={true} {...crispProject} />
     </BasicCasePage>
   );

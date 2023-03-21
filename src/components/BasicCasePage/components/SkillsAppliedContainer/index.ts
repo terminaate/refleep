@@ -1,4 +1,4 @@
-import SkillsAppliedContainer from "./SkillsAppliedContainer";
+import SkillsAppliedContainer from './SkillsAppliedContainer';
 
 export * from './SkillsAppliedContainer';
 export default SkillsAppliedContainer;
