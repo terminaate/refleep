@@ -30,7 +30,12 @@ const HomeSection = () => {
           <span className={cl.description}>
             Our design experts are here to help!
           </span>
-          <Button className={cl.modalButton}>Let’s chat</Button>
+          <Button
+            onClick={() => window.location.replace('#footer')}
+            className={cl.modalButton}
+          >
+            Let’s chat
+          </Button>
         </div>
         <div className={cl.rightSideContainer}>
           <Video
@@ -47,7 +52,10 @@ const HomeSection = () => {
         </div>
       </div>
       <Image src={scrollImg} alt={'scroll'} className={cl.scrollIcon} />
-      <Button className={cl.requestDesignButton}>
+      <Button
+        onClick={() => window.location.replace("#footer")}
+        className={cl.requestDesignButton}
+      >
         {isMobile ? (
           <Image src={penIcon} alt={'request design image'} />
         ) : (

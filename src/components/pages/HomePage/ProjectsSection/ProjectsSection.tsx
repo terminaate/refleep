@@ -17,9 +17,9 @@ const ProjectsSection = () => {
           )}
         </>
       ))}
-      <Button className={cl.casesButton} background={false}>
-        See case studies
-      </Button>
+      {/*<Button className={cl.casesButton} background={false}>*/}
+      {/*  See case studies*/}
+      {/*</Button>*/}
       <Separator className={cl.separator} side={'left'} />
     </section>
   );

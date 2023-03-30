@@ -12,6 +12,7 @@ interface IFooter {
 const Footer: FC<IFooter> = ({ absolute = false, className }) => {
   return (
     <footer
+      id={'footer'}
       data-absolute={absolute}
       className={classNames(cl.footer, className)}
     >
