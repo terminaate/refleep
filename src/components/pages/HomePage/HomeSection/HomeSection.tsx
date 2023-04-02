@@ -41,7 +41,7 @@ const HomeSection = () => {
           <Video
             title={'Showreel'}
             autoPlay={true}
-            src={'https://refleep.netlify.app/2068325937.mp4'}
+            src={'https://refleep.netlify.app/2068325937.mov'}
           />
           <div className={cl.awardsContainer}>
             <Image src={awwwardsLogo} alt={'awwwards'} />
